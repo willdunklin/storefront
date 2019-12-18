@@ -497,7 +497,7 @@ a {
       z-index: -1;
       position: absolute; }
   .site-blocks-cover, .site-blocks-cover > .container > .row {
-    min-height: 600px; }
+    min-height: 550px; }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
     min-height: 400px;
     height: 700px; }
@@ -556,8 +556,8 @@ a {
     border-bottom: 1px solid #eee; }
     .products .item .tag, .product .item .tag {
       position: absolute;
-      background: #ffe5ae;
-      color: #000;
+      background: #207dffa6;
+      color: #f9f9f9;
       letter-spacing: .2em;
       padding: 7px 20px;
       font-size: .8rem;
@@ -579,9 +579,9 @@ a {
       z-index: 1;
       position: relative; }
     .products .item:hover img, .product .item:hover img {
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8); }
+      -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      transform: scale(0.95); }
     .products .item .item-info, .product .item .item-info {
       position: absolute;
       bottom: 0;
@@ -591,7 +591,7 @@ a {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       .products .item .item-info h3, .product .item .item-info h3 {
-        color: #000;
+        color: #f9f9f9;
         font-size: 1.5rem; }
         @media (max-width: 991.98px) {
           .products .item .item-info h3, .product .item .item-info h3 {
@@ -602,10 +602,10 @@ a {
           .products .item .item-info .collection, .product .item .item-info .collection {
             font-size: .9rem; } }
       .products .item .item-info .price, .product .item .item-info .price {
-        color: #000;
+        color: #f9f9f9;
         font-size: 1.5rem; }
         .products .item .item-info .price del, .product .item .item-info .price del {
-          color: #adb5bd;
+          color: #f9f9f9;
           margin-left: 2%; }
         @media (max-width: 991.98px) {
           .products .item .item-info .price, .product .item .item-info .price {
@@ -717,8 +717,6 @@ a {
 .block-3 .product {
   border-right: none !important;
   border-left: none !important; }
-  .block-3 .product .item {
-    border: 1px solid #eee; }
 
 .block-4 {
   -webkit-box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.1);
@@ -1117,4 +1115,15 @@ a {
 }
 .site-logo a:hover {
   color: #207dff;
+}
+.site-blocks-cover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/wave2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  bottom: -1.5em;
 }
