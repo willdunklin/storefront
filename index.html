@@ -62,7 +62,7 @@
             <div class="featured-hero-product w-100">
               <h1 class="mb-2">Art</h1>
               <h4>For Sale and Commission</h4>
-              <a onclick="scroll()" href="javascript:void(0);" class="btn btn-outline-primary rounded-0">Shop Now</a>
+              <a href="javascript:document.querySelector('.site-section').scrollIntoView({behavior: 'smooth'});" class="btn btn-outline-primary rounded-0">Shop Now</a>
             </div>
           </div>
           <div class="col-lg-7 align-self-end text-center text-lg-right">
@@ -76,6 +76,7 @@
         <div class="row">
           <div class="title-section text-center col-12">
             <h2 class="text-uppercase">Pieces</h2>
+            <div class="site-section-line"><div></div></div>
             <h6>By Beccah Dunklin</h6>
           </div>
         </div>
@@ -89,6 +90,7 @@
                   <div class="item-info">
                     <h3>Alicia Keys</h3>
                     <strong class="price">$9.50</strong>
+                    <div class="button-wrap"><p class="button blue">Add To Cart</p></div>
                   </div>
                 </a>
               </div>
@@ -100,6 +102,7 @@
                   <div class="item-info">
                     <h3>Insight</h3>
                     <strong class="price">$9.50 <del>$20.00</del></strong>
+                    <div class="button-wrap"><p class="button blue">Add To Cart</p></div>
                   </div>
                 </a>
               </div>
@@ -110,6 +113,7 @@
                   <div class="item-info">
                     <h3>Skeletal Kiss</h3>
                     <strong class="price">$9.50</strong>
+                    <div class="button-wrap"><p class="button blue">Add To Cart</p></div>
                   </div>
                 </a>
               </div>
@@ -120,6 +124,7 @@
                   <div class="item-info">
                     <h3>Sitting Man</h3>
                     <strong class="price">$9.50</strong>
+                    <div class="button-wrap"><p class="button blue">Add To Cart</p></div>
                   </div>
                 </a>
               </div>
@@ -131,6 +136,7 @@
                   <div class="item-info">
                     <h3>Standing</h3>
                     <strong class="price">$9.50 <del>$15.00</del></strong>
+                    <div class="button-wrap"><p class="button blue">Add To Cart</p></div>
                   </div>
                 </a>
               </div>
@@ -160,7 +166,6 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <script>function scroll(){document.querySelector('.site-section').scrollIntoView({behavior: 'smooth'});}</script>
 
   </body>
 </html>

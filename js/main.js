@@ -3,8 +3,6 @@
  	easing: 'slide',
  	once: true
  });
- 
-// function scroll(){document.querySelector('.site-section').scrollIntoView({behavior: 'smooth'});}
 
 jQuery(document).ready(function($) {
 

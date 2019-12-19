@@ -7,12 +7,12 @@ body {
   font-size: 16px; }
 
 ::-moz-selection {
-  background: #000;
-  color: #fff; }
+  background: #111;
+  color: #eee; }
 
 ::selection {
-  background: #000;
-  color: #fff; }
+  background: #111;
+  color: #ee0; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -79,7 +79,7 @@ a {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 5em 0; } }
+      padding: 1em 0 5em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -587,9 +587,9 @@ a {
       bottom: 0;
       z-index: 2;
       width: 100%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      -webkit-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+      transform: translateY(-10%); }
       .products .item .item-info h3, .product .item .item-info h3 {
         color: #f9f9f9;
         font-size: 1.5rem; }
@@ -695,10 +695,10 @@ a {
   font-size: 2rem; }
 
 .block-3 .owl-nav .owl-prev {
-  left: 0; }
+  left: -1em; }
 
 .block-3 .owl-nav .owl-next {
-  right: 0; }
+  right: -1em; }
 
 .block-3 .owl-dots {
   text-align: center; }
@@ -978,7 +978,7 @@ a {
   border-left: none;
   position: relative;
   padding-left: 0px;
-  padding-bottom: 20px; }
+  padding-bottom: 0; }
   .title-section.text-center h2:after {
     display: none;
     position: absolute;
@@ -1126,4 +1126,30 @@ a {
   background-size: cover;
   background-position: top;
   bottom: -1.5em;
+}
+.site-section-line {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 1em 0;
+}
+.site-section-line div{
+  width: 20em;
+  height: 2px;
+  background-color: #111;
+}
+.button-wrap {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  border: 2px solid #555;
+  background-color: #f9f9f9D0;
+  width: 40%;
+  font-size: 1.2rem;
+  color: #555;
+  transition: all .1s ease-out;
+}
+.button:hover {
+  color: #207dff;
+  border: 2px solid #207dff;
 }
