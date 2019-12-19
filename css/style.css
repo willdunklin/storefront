@@ -1113,7 +1113,6 @@ a {
   background-color: #ee0;
   border-color: #ee0;
 }
-
 .search-wrap {
   z-index: 9999;
   background-color:#f9f9f9;
@@ -1133,8 +1132,9 @@ a {
   bottom: -1.5em;
 }
 .site-blocks-blog {
-  min-height: 800px;
+  min-height: 660px;
   clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -2em;
 }
 .site-blocks-blog:after {
   content: '';
@@ -1172,6 +1172,32 @@ a {
 .button:hover {
   border: 2px solid #ee0;
 }
-.yellow {
+
+.blog p {
+  color: #f9f9f9;
+}
+.blog {
+  color: #f9f9f9;
+}
+.blog h1 {
+  font-size: 65px;
   color: #ee0;
+  user-select: none;
+}
+
+textarea {
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.form-button {
+  font-weight: 500;
+  background-color: #111;
+  color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 5px;
+}
+.form-button:hover {
+  color: #ee0;
+  border: 1px solid #ee0;
 }
