@@ -79,7 +79,7 @@ a {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 1em 0 5em 0; } }
+      padding: 1em 0 0 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -248,7 +248,7 @@ a {
         font-size: 15px;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #207dff; }
+          color: #ee0; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -461,12 +461,11 @@ a {
                 padding-left: 60px; }
 
 /* Blocks */
-.site-blocks-cover {
+.site-blocks-cover,  .site-blocks-blog {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background: #111;
-  /* background-image: url("../images/alicia.png"); */
   position: relative;
   overflow: hidden;
   z-index: 9; }
@@ -556,8 +555,8 @@ a {
     border-bottom: 1px solid #eee; }
     .products .item .tag, .product .item .tag {
       position: absolute;
-      background: #207dffa6;
-      color: #f9f9f9;
+      background: #ee0;
+      color: #111;
       letter-spacing: .2em;
       padding: 7px 20px;
       font-size: .8rem;
@@ -712,7 +711,7 @@ a {
       margin: 5px;
       background: #ccc; }
     .block-3 .owl-dots .owl-dot.active > span {
-      background: #207dff; }
+      background: #ee0; }
 
 .block-3 .product {
   border-right: none !important;
@@ -1105,10 +1104,16 @@ a {
   border-color: #f9f9f9;
 }
 .btn-outline-primary:hover {
-  color: #207dff;
+  color: #ee0;
   background-color: #111;
-  border-color: #207dff;
+  border-color: #ee0;
 }
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #111;
+  background-color: #ee0;
+  border-color: #ee0;
+}
+
 .search-wrap {
   z-index: 9999;
   background-color:#f9f9f9;
@@ -1127,6 +1132,21 @@ a {
   background-position: top;
   bottom: -1.5em;
 }
+.site-blocks-blog {
+  min-height: 800px;
+  clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
+}
+.site-blocks-blog:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  bottom: -5em;
+}
 .site-section-line {
   display: flex;
   justify-content: center;
@@ -1137,19 +1157,21 @@ a {
   height: 2px;
   background-color: #111;
 }
+
 .button-wrap {
   display: flex;
   justify-content: center;
 }
 .button {
-  border: 2px solid #555;
-  background-color: #f9f9f9D0;
+  border: 2px solid #f9f9f9;
   width: 40%;
   font-size: 1.2rem;
-  color: #555;
-  transition: all .1s ease-out;
+  color: #f9f9f9;
+  transition: all .2s ease-out;
 }
 .button:hover {
-  color: #207dff;
-  border: 2px solid #207dff;
+  border: 2px solid #ee0;
+}
+.yellow {
+  color: #ee0;
 }
